@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script defer src="./js/index.js"></script>
+    <title>Newvies</title>
+  </head>
+  <body>
+    <header>
+      <container>
+      <nav
+        role="navigation" aria-label="main navigation">
+            <h2 id="title">Newvies</h2>
+            <div>            
+              <input
+              class="input is-rounded"
+              type="text"
+              placeholder="Search"
+              />            
+      </nav>
+    </container>
+    </header>
+    <main class="container is-mobile">
+      <div class="columns is-multiline ">
+        <template moviesTemplate>
+          <div class="column is-one-quarter">
+            <div id= "userCard" class="card">
+              <div class="imgHolder">
+                <div class="card-image">
+                  <figure class="image is-4by5">
+                    <img src="https://image.tmdb.org/t/p/w500/%path%" alt="Placeholder image">
+                  </figure>
+                </div>
+              </div>
+                <div id="movieContent" class="media-content content is-medium">
+                  <div><p id="title" class="title is-3 has-text-centered has-text-light">%title%</p></div>
+                  <div><p id="date" class="subtitle is-6 has-text-centered has-text-light">%release%</p></div>       
+                  <div>
+                    <p id="resume" class="subtitle is-6 has-text-centered has-text-grey-light">%overview%</p>
+                  </div>        
+                    <div><p id="vote" class="subtitle is-6 has-text-centered has-text-grey-light">%average%/10</p></div>
+                    <div><p id="genre" class="title is-6 has-text-centered has-text-grey">%genre%</p></div>
+                               
+                  
+                  
+                </div>
+              </div>
+            </div>
+        </template>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <span>
+          <a href="#" id="down"> << </a> <p>1 - 20</p> <a href="#" id="up"> >> </a>
+        </span>
+    </footer>
+  </body>
+</html>

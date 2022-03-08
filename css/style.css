@@ -1,0 +1,136 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 800px;
+  margin: 0;
+  background-color: #09090a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#09090a), to(#14141d));
+  background: linear-gradient(to bottom, #09090a 0%, #14141d 100%);
+}
+
+header {
+  background-color: #b8122e;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 100px;
+  height: 50px;
+}
+
+header nav #title {
+  font-size: 30px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main .column {
+  height: 90%;
+  min-height: 850px;
+  margin-bottom: 50px;
+}
+
+main .column #userCard {
+  background: transparent;
+  min-height: 890px;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 5px 2px #2e2e2e;
+          box-shadow: 1px 1px 5px 2px #2e2e2e;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+main .column #userCard:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .column #userCard .imgHolder {
+  margin-bottom: 20px;
+}
+
+main .column #userCard #movieContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .column #userCard #movieContent #vote {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+main .column #userCard #movieContent div {
+  margin-bottom: 10px;
+}
+
+main .column #userCard #movieContent div:nth-child(4n) {
+  margin-bottom: 20px;
+}
+
+footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+footer span a,
+footer span p {
+  text-decoration: none;
+  color: lightgray;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+footer span p {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  #userCard {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    margin: 0 50px 0 -20px;
+  }
+  .columns {
+    max-width: 85%;
+  }
+  .columns.column {
+    margin-left: 100px;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
